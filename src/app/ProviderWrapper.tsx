@@ -39,7 +39,7 @@ export default function ProvidersWrapper({
       >
         <NextUIProvider>
           {profile.getProfile}
-          <main className="flex flex-row space-x-12">{children}</main>
+          <main className="flex">{children}</main>
         </NextUIProvider>
       </NextThemesProvider>
     </SessionProvider>

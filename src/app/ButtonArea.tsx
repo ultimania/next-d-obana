@@ -1,9 +1,7 @@
-import styles from './navigation.module.css';
-
-export default function Navigation() {
+export default function Navigation({ className }: { className: string }) {
   return (
-    <div className={`${styles.navigation} flex`}>
-      <nav />
+    <div className={`${className} flex flex-col text-center`}>
+      button area dayo
     </div>
   );
 }

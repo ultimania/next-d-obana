@@ -5,6 +5,7 @@ import ProvidersWrapper from './ProviderWrapper';
 
 import Navigation from './Navigation';
 import ButtonArea from './ButtonArea';
+import LogoArea from './LogoArea';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -38,9 +39,10 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <ProvidersWrapper>
-          <Navigation />
-          {children}
-          <ButtonArea />
+          <Navigation className="w-1/6" />
+          <LogoArea className="w-1/6" />
+          <div className="w-3/6 text-center">{children}</div>
+          <ButtonArea className="w-1/6" />
         </ProvidersWrapper>
       </body>
     </html>
