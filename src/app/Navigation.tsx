@@ -1,7 +1,8 @@
 'use client';
 
-import { Link, Navbar } from '@nextui-org/react';
-import styles from './navigation.module.css';
+import Link from 'next/link';
+import { Navbar } from '@nextui-org/react';
+import styles from './Navigation.module.css';
 
 export default function Navigation({ className }: { className: string }) {
   const navItems = [
@@ -14,15 +15,11 @@ export default function Navigation({ className }: { className: string }) {
     'OTHER',
   ];
   return (
-    <div className={`${styles.navigation} ${className}`}>
+    <div className={`${styles.navigation} ${className} p-2`}>
       <div className="fixed">
-        <Navbar variant="sticky">
+        <Navbar disableBlur containerCss={{ backgroundColor: 'transparent' }}>
           <Navbar.Brand>
-            <Navbar.Toggle
-              aria-label="toggle navigation"
-              showIn="sm"
-              style={{ paddingRight: 12 }}
-            />
+            <Navbar.Toggle aria-label="toggle navigation" showIn="sm" />
           </Navbar.Brand>
           <Navbar.Content
             hideIn="sm"

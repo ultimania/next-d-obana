@@ -1,24 +1,9 @@
 'use client';
 
-import { createTheme, NextUIProvider } from '@nextui-org/react';
+import { NextUIProvider } from '@nextui-org/react';
 import { SessionProvider } from 'next-auth/react';
-import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 import { useProfile } from './hooks/useProfile';
-
-const lightTheme = createTheme({
-  type: 'light',
-});
-
-const darkTheme = createTheme({
-  type: 'dark',
-  theme: {
-    colors: {
-      gradient:
-        'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%',
-    },
-  },
-});
 
 export default function ProvidersWrapper({
   children,
@@ -29,19 +14,10 @@ export default function ProvidersWrapper({
 
   return (
     <SessionProvider>
-      <NextThemesProvider
-        defaultTheme="system"
-        attribute="class"
-        value={{
-          light: lightTheme.className,
-          dark: darkTheme.className,
-        }}
-      >
-        <NextUIProvider>
-          {profile.getProfile}
-          <main className="flex">{children}</main>
-        </NextUIProvider>
-      </NextThemesProvider>
+      <NextUIProvider>
+        <div className="w-full sticky top-0 z-10">{profile.getProfile}</div>
+        <main className="flex flex-row z-0">{children}</main>
+      </NextUIProvider>
     </SessionProvider>
   );
 }
