@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Profile() {
   const itemList = [
     {
@@ -34,7 +36,14 @@ export default function Profile() {
             </div>
           ))}
         </div>
-        <div>image area dayo</div>
+        <div>
+          <Image
+            src="/img_profile.jpg"
+            width={180}
+            height={120}
+            alt="Picture of the author"
+          />
+        </div>
       </div>
     </div>
   );
