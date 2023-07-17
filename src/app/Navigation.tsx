@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useProfile } from './hooks/useProfile';
+import useStore from '../../store';
 
 export default function Navigation({ className }: { className: string }) {
   const navItems = [
@@ -12,14 +12,14 @@ export default function Navigation({ className }: { className: string }) {
     { id: 'EDITORIAL', href: '/editorial' },
     { id: 'OTHER', href: 'other' },
   ];
-  const profile = useProfile();
+  const toggle = useStore((state) => state.toggle);
   return (
     <div className={`${className} p-2`}>
       <div className="fixed">
         <div>
-          <Link href="/" onClick={() => profile.toggle()}>
+          <button type="submit" onClick={toggle}>
             ABOUT
-          </Link>
+          </button>
         </div>
         {navItems.map((item) => (
           <div key={item.id}>
