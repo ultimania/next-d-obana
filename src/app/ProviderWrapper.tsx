@@ -20,15 +20,16 @@ export default function ProvidersWrapper({
         <div
           className={clsx(
             isShowProfile && 'show',
+            'about',
             'w-full',
             'sticky',
+            'relative',
             'top-0',
             'z-10',
           )}
         >
           <Profile />
         </div>
-        <div>{isShowProfile && 'test'}</div>
         <main className="flex flex-row z-0">{children}</main>
       </NextUIProvider>
     </SessionProvider>
