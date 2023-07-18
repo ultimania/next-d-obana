@@ -15,13 +15,13 @@ export default function Navigation({ className }: { className: string }) {
   const toggle = useStore((state) => state.toggle);
   return (
     <div className={`${className}`}>
-      <div className="fixed flex flex-col">
-        <div className="top-0 p-4">
+      <div className="fixed flex flex-col justify-between h-full w-1/12">
+        <div className="p-4">
           <button type="submit" onClick={toggle}>
             ABOUT
           </button>
         </div>
-        <div className="fixed bottom-0 p-4">
+        <div className="p-4">
           {navItems.map((item) => (
             <div key={item.id} className="py-2">
               <Link href={item.href}>{item.id}</Link>
