@@ -40,11 +40,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <ProvidersWrapper>
           <Navigation className="w-1/6" />
-          <div className="w-4/6">
+          <div className="w-9/12">
             <LogoArea className="w-1/3 relative z-10" />
             <div className="w-3/3 text-center">{children}</div>
           </div>
-          <ButtonArea className="w-1/6" />
+          <ButtonArea className="w-1/12" />
         </ProvidersWrapper>
       </body>
     </html>

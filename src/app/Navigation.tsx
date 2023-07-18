@@ -14,18 +14,20 @@ export default function Navigation({ className }: { className: string }) {
   ];
   const toggle = useStore((state) => state.toggle);
   return (
-    <div className={`${className} p-2`}>
-      <div className="fixed">
-        <div>
+    <div className={`${className}`}>
+      <div className="fixed flex flex-col">
+        <div className="top-0 p-4">
           <button type="submit" onClick={toggle}>
             ABOUT
           </button>
         </div>
-        {navItems.map((item) => (
-          <div key={item.id}>
-            <Link href={item.href}>{item.id}</Link>
-          </div>
-        ))}
+        <div className="fixed bottom-0 p-4">
+          {navItems.map((item) => (
+            <div key={item.id} className="py-2">
+              <Link href={item.href}>{item.id}</Link>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
