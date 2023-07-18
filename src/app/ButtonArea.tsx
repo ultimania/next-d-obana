@@ -30,7 +30,7 @@ export default function Navigation({ className }: { className: string }) {
               onClick={() => {
                 router.push(item.href);
               }}
-              className="my-4"
+              className="my-4 cursor-pointer"
             />
           ))}
         </div>
