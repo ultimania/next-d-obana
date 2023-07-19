@@ -29,7 +29,7 @@ export default function Navigation({ className }: { className: string }) {
   };
   return (
     <div className={`${className}`}>
-      <div className="fixed flex flex-col items-center justify-between h-full w-1/12">
+      <div className="fixed flex flex-col items-center h-full w-1/12">
         <div className="text-center pt-4">
           {buttonItems.map((item) => (
             <item.icon
@@ -41,7 +41,7 @@ export default function Navigation({ className }: { className: string }) {
             />
           ))}
         </div>
-        <div className="p-4 flex flex-col items-center">
+        <div className="fixed bottom-0 p-4 flex flex-col items-center">
           <button type="submit" className="my-4" onClick={returnTop}>
             top
           </button>
