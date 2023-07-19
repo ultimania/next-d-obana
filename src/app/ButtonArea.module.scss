@@ -1,0 +1,37 @@
+@keyframes slide-open {
+  0% {
+    transform: translateX(0.5rem);
+  }
+
+  100% {
+    transform: translateX(-0.5rem);
+  }
+}
+
+@keyframes slide-close {
+  0% {
+    transform: translateX(-0.5rem);
+  }
+
+  100% {
+    transform: translateX(0.5rem);
+  }
+}
+
+.hoverd {
+  .sns-icon {
+   animation: slide-open 0.5s forwards;
+  }
+  .sns-text {
+    opacity: 1;
+  }
+}
+
+.sns-icon {
+  animation: slide-close 0.5s forwards;
+}
+
+.sns-text {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
