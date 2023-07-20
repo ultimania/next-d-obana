@@ -44,7 +44,7 @@ export default function Navigation({ className }: { className: string }) {
               className={clsx(
                 'w-full',
                 'flex',
-                'flex-row',
+                'flex-col',
                 'items-center',
                 'cursor-pointer',
                 index === hoveredIndex && styles.hoverd,
@@ -56,7 +56,7 @@ export default function Navigation({ className }: { className: string }) {
                 onClick={() => {
                   router.push(item.href);
                 }}
-                className={clsx(styles['sns-icon'], 'my-4', 'h-6')}
+                className={clsx(styles['sns-icon'], 'h-6', 'w-auto')}
               />
               <span className={clsx(styles['sns-text'])}>{item.id}</span>
             </div>

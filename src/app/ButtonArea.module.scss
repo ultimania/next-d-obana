@@ -1,20 +1,20 @@
 @keyframes slide-open {
   0% {
-    transform: translateX(0.5rem);
+    transform: translateY(0.5rem);
   }
 
   100% {
-    transform: translateX(-0.5rem);
+    transform: translateY(-0.5rem);
   }
 }
 
 @keyframes slide-close {
   0% {
-    transform: translateX(-0.5rem);
+    transform: translateY(-0.5rem);
   }
 
   100% {
-    transform: translateX(0.5rem);
+    transform: translateY(0.5rem);
   }
 }
 
