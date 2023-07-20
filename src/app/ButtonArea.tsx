@@ -18,6 +18,9 @@ import styles from './ButtonArea.module.scss';
 export default function Navigation({ className }: { className: string }) {
   const router = useRouter();
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredControlIndex, setHoveredControlIndex] = useState<number | null>(
+    null,
+  );
 
   const buttonItems = [
     { id: 'instagram', icon: LiaInstagram, href: 'https://www.instagram.com' },
@@ -25,6 +28,11 @@ export default function Navigation({ className }: { className: string }) {
     { id: 'github', icon: LiaGithub, href: 'https://www.instagram.com' },
     { id: 'youtube', icon: LiaYoutube, href: 'https://www.instagram.com' },
     { id: 'linkedin', icon: LiaLinkedin, href: 'https://www.instagram.com' },
+  ];
+
+  const controlItems = [
+    { id: 'up', icon: IoIosArrowUp, class: 'control-button-up' },
+    { id: 'down', icon: IoIosArrowDown, class: 'control-button-down' },
   ];
 
   const returnTop = () => {
@@ -66,8 +74,19 @@ export default function Navigation({ className }: { className: string }) {
           <button type="submit" className="my-4" onClick={returnTop}>
             top
           </button>
-          <IoIosArrowUp className="my-4" />
-          <IoIosArrowDown className="my-4" />
+          {controlItems.map((item, index) => (
+            <item.icon
+              key={item.id}
+              className={clsx(
+                'my-4',
+                'cursor-pointer',
+                index === hoveredControlIndex && styles.hoverd,
+                styles[item.class],
+              )}
+              onMouseEnter={() => setHoveredControlIndex(index)}
+              onMouseLeave={() => setHoveredControlIndex(null)}
+            />
+          ))}
         </div>
       </div>
     </div>
