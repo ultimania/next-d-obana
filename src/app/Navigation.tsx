@@ -11,11 +11,11 @@ import styles from './Navigation.module.scss';
 export default function Navigation({ className }: { className: string }) {
   const navItems = [
     { id: 'ALL', href: '/all' },
-    { id: 'WEB', href: '/web' },
-    { id: 'IDENTITY', href: '/identity' },
-    { id: 'DM / CARD', href: '/dm-card' },
-    { id: 'EDITORIAL', href: '/editorial' },
-    { id: 'OTHER', href: 'other' },
+    { id: 'SKILLSET', href: '/skillset' },
+    { id: 'CERTIFIED', href: '/certified' },
+    { id: 'HISTORY', href: '/history' },
+    { id: 'BLOG', href: '/blog' },
+    { id: 'GALARY', href: '/galary' },
   ];
   const toggle = useStore((state) => state.toggle);
   const isShowProfile = useStore((state) => state.isShowProfile);

@@ -23,11 +23,23 @@ export default function Navigation({ className }: { className: string }) {
   );
 
   const buttonItems = [
-    { id: 'instagram', icon: LiaInstagram, href: 'https://www.instagram.com' },
-    { id: 'twitter', icon: LiaTwitter, href: 'https://www.instagram.com' },
-    { id: 'github', icon: LiaGithub, href: 'https://www.instagram.com' },
-    { id: 'youtube', icon: LiaYoutube, href: 'https://www.instagram.com' },
-    { id: 'linkedin', icon: LiaLinkedin, href: 'https://www.instagram.com' },
+    {
+      id: 'instagram',
+      icon: LiaInstagram,
+      href: 'https://www.instagram.com/yng.ultimania/',
+    },
+    { id: 'twitter', icon: LiaTwitter, href: 'https://twitter.com/fclout' },
+    { id: 'github', icon: LiaGithub, href: 'https://github.com/ultimania' },
+    {
+      id: 'youtube',
+      icon: LiaYoutube,
+      href: 'https://www.youtube.com/channel/UCww-CdVELKU524T9Ip0ai-w',
+    },
+    {
+      id: 'linkedin',
+      icon: LiaLinkedin,
+      href: 'https://www.linkedin.com/in/takumi-fukaya-529627256/',
+    },
   ];
 
   const controlItems = [
