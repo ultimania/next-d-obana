@@ -10,7 +10,6 @@ import styles from './Navigation.module.scss';
 
 export default function Navigation({ className }: { className: string }) {
   const navItems = [
-    { id: 'ALL', href: '/all' },
     { id: 'SKILLSET', href: '/skillset' },
     { id: 'CERTIFIED', href: '/certified' },
     { id: 'HISTORY', href: '/history' },

@@ -1,4 +1,4 @@
-import { Content } from '../components/elements/Content';
+import { Content } from '../components/elements/ContentContainer';
 
 export default function Home() {
   return (
