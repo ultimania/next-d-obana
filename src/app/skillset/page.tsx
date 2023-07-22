@@ -38,6 +38,14 @@ export default function Skillset() {
         'あまり複雑なコードをスクラッチで書くことはできませんが、ライブラリの実装や基本的なコードは問題なく書けます。',
     },
     {
+      id: 'typescript',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/master/icons/typescript/typescript-original.svg',
+      lank: 3,
+      description:
+        'ジェネリクスやインターフェースなどの機能を理解し、適切に型安全な実装をすることができます。',
+    },
+    {
       id: 'Node.js',
       iconUrl:
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
@@ -102,16 +110,121 @@ export default function Skillset() {
         'フレームワークの基本的な機能や特徴を理解しており、APIサーバー用のライブラリを使用した基本的な実装ができます。',
     },
   ];
+
   const developementTool: ContentContainerItem[] = [
     {
-      id: 'ShellScript',
+      id: 'VSCode',
       iconUrl:
-        'https://github.com/devicons/devicon/raw/master/icons/bash/bash-original.svg',
+        'https://github.com/devicons/devicon/raw/master/icons/vscode/vscode-original.svg',
+      lank: 4,
+      description: '',
+    },
+    {
+      id: 'Backlog',
+      iconUrl: '',
       lank: 3,
+      description: '',
+    },
+    {
+      id: 'Github',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/master/icons/github/github-original.svg',
+      lank: 5,
+      description: '',
+    },
+    {
+      id: 'Maven',
+      iconUrl: '',
+      lank: 4,
+      description: '',
+    },
+    {
+      id: 'JUnit',
+      iconUrl: '',
+      lank: 5,
+      description: '',
+    },
+    {
+      id: 'jMeter',
+      iconUrl: '',
+      lank: 3,
+      description: '',
+    },
+    {
+      id: 'Selenium',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/master/icons/selenium/selenium-original.svg',
+      lank: 3,
+      description: '',
+    },
+    {
+      id: 'Terraform/Terragrunt',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/master/icons/terraform/terraform-original.svg',
+      lank: 5,
       description:
-        'あまり複雑なコードをスクラッチで書くことはできませんが、ライブラリの実装や基本的なコードは問題なく書けます。',
+        '低コストかつスピーディなデータ分析基盤ソリューションのコア開発者としての利用・開発実績があり、クラウドだけでなくk8sや各種ミドルウェアのセットアップ自動化まで実装することができます。プロバイダのコントリビュート経験もあります。',
+    },
+    {
+      id: 'Jenkins',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/master/icons/jenkins/jenkins-original.svg',
+      lank: 4,
+      description: '',
+    },
+    {
+      id: 'Screwdriver',
+      iconUrl: '',
+      lank: 3,
+      description: '',
+    },
+    {
+      id: 'CloudFoundry',
+      iconUrl: '',
+      lank: 3,
+      description: '',
+    },
+    {
+      id: 'Confluence',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/master/icons/confluence/confluence-original.svg',
+      lank: 3,
+      description: '',
+    },
+    {
+      id: 'Dynatrace',
+      iconUrl: '',
+      lank: 3,
+      description: '',
+    },
+    {
+      id: 'Splunk',
+      iconUrl: '',
+      lank: 3,
+      description: '',
+    },
+    {
+      id: 'SourceClear',
+      iconUrl: '',
+      lank: 3,
+      description: '',
+    },
+    {
+      id: 'SonarQube',
+      iconUrl: '',
+      lank: 3,
+      description: '',
+    },
+    {
+      id: 'Vim',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/master/icons/vim/vim-original.svg',
+      lank: 4,
+      description:
+        'VSCodeと組み合わせて愛用しているエディタです。基本的なキー操作は体が覚えているレベルですが、応用的なものは調べたり思い出したりしながら使ってます。',
     },
   ];
+
   const infrastructure: ContentContainerItem[] = [
     {
       id: 'ShellScript',
@@ -122,6 +235,7 @@ export default function Skillset() {
         'あまり複雑なコードをスクラッチで書くことはできませんが、ライブラリの実装や基本的なコードは問題なく書けます。',
     },
   ];
+
   const other: ContentContainerItem[] = [
     {
       id: 'ShellScript',
@@ -132,6 +246,7 @@ export default function Skillset() {
         'あまり複雑なコードをスクラッチで書くことはできませんが、ライブラリの実装や基本的なコードは問題なく書けます。',
     },
   ];
+
   return (
     <div className="flex flex-col p-10">
       <ContentContainer
