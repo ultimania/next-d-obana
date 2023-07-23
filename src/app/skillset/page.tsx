@@ -91,7 +91,7 @@ export default function Skillset() {
         'https://github.com/devicons/devicon/raw/master/icons/nextjs/nextjs-original-wordmark.svg',
       lank: 2,
       description:
-        'サーバーコンポーネント/クライアントコンポーネントやSSG/SSRの仕組み・特徴を理解しており、一般的なWebアプリケーションを作成することができます。このポートフォリオサイトもNext.jsを使って作成しております。',
+        'サーバーコンポーネント/クライアントコンポーネントやSSG/SSRの仕組み・特徴を理解しており、一般的なWebアプリケーションを作成することができます。このポートフォリオサイトもNext.jsを使って作成しています。',
     },
     {
       id: 'Python',
@@ -117,51 +117,53 @@ export default function Skillset() {
       iconUrl:
         'https://github.com/devicons/devicon/raw/master/icons/vscode/vscode-original.svg',
       lank: 4,
-      description: '',
-    },
-    {
-      id: 'Backlog',
-      iconUrl: '',
-      lank: 3,
-      description: '',
+      description:
+        '普段から愛用しているエディタで、基本的な機能は使いこなせます。また効率的にコーディングするためのショートカットキーやDockerやESLintといった開発ツール用プラグインと合わせた開発作業を行っています。',
     },
     {
       id: 'Github',
       iconUrl:
         'https://github.com/devicons/devicon/raw/master/icons/github/github-original.svg',
       lank: 5,
-      description: '',
+      description:
+        'Gitの基本的な操作に加え、IssueやPullRequest、Actionsなどのプロバイダとしての基本機能の他に、組織として安全に運用していくための設定・管理作業の実績もあります。',
     },
     {
       id: 'Maven',
-      iconUrl: '',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/maven/maven-original.svg',
       lank: 4,
-      description: '',
+      description:
+        'パッケージ管理やバージョン管理だけでなく、各種プラグインの設定やテスト周りの設定方法などSpringBootを使った開発に最適な設定・運用が可能です。',
     },
     {
       id: 'JUnit',
-      iconUrl: '',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/junit/junit-original.svg',
       lank: 5,
-      description: '',
+      description:
+        'JUnit5から追加されたパラメータテスト、WireMock・DBUnitなどを使用したプレゼンテーション層からインフラストラクチャ層までの一気通貫の結合テストなど、プロダクションコードの品質を保つために必要なテストコードの実装が可能です。',
     },
     {
       id: 'jMeter',
-      iconUrl: '',
+      iconUrl: 'https://jmeter.apache.org/images/jmeter_square.svg',
       lank: 3,
-      description: '',
+      description:
+        '単なる負荷テストだけでなく、リリース後の実際の運用状況を想定して適切なスレッド数やリクエスト間隔に基づいたテストシナリオの作成および性能値の測定とその結果に対する考察などに取り組んできた実績があります。',
     },
     {
       id: 'Selenium',
       iconUrl:
         'https://github.com/devicons/devicon/raw/master/icons/selenium/selenium-original.svg',
-      lank: 3,
-      description: '',
+      lank: 2,
+      description:
+        'あまり複雑なテストケースは作成できませんが、画面遷移やログイン処理など、簡単な画面動作のテストケースであれば問題なく作成・実行できます。',
     },
     {
       id: 'Terraform/Terragrunt',
       iconUrl:
         'https://github.com/devicons/devicon/raw/master/icons/terraform/terraform-original.svg',
-      lank: 5,
+      lank: 4,
       description:
         '低コストかつスピーディなデータ分析基盤ソリューションのコア開発者としての利用・開発実績があり、クラウドだけでなくk8sや各種ミドルウェアのセットアップ自動化まで実装することができます。プロバイダのコントリビュート経験もあります。',
     },
@@ -170,50 +172,45 @@ export default function Skillset() {
       iconUrl:
         'https://github.com/devicons/devicon/raw/master/icons/jenkins/jenkins-original.svg',
       lank: 4,
-      description: '',
-    },
-    {
-      id: 'Screwdriver',
-      iconUrl: '',
-      lank: 3,
-      description: '',
+      description:
+        'ツールの導入・基本設定作業から、パイプラインの実装・Gitプロバイダやその他開発ツールとの連携設定まで、ゼロからCICDを本番運用可能にする状態までを自走することができます。',
     },
     {
       id: 'CloudFoundry',
-      iconUrl: '',
-      lank: 3,
-      description: '',
+      iconUrl: 'https://www.svgrepo.com/show/373507/cloudfoundry.svg',
+      lank: 2,
+      description:
+        'CICDと組み合わせて本番環境にアプリケーションをデプロイするためのマニフェストの作成が可能です。',
     },
     {
       id: 'Confluence',
       iconUrl:
         'https://github.com/devicons/devicon/raw/master/icons/confluence/confluence-original.svg',
-      lank: 3,
-      description: '',
+      lank: 2,
+      description:
+        '情報共有のために必要な基本的な記事の作成や、共有に便利な各種機能を扱うことができます。',
     },
     {
       id: 'Dynatrace',
-      iconUrl: '',
+      iconUrl: 'https://www.svgrepo.com/show/353681/dynatrace-icon.svg',
       lank: 3,
-      description: '',
+      description:
+        '各環境にデプロイしたアプリケーションのメトリクスの収集設定、収集したメトリクスの情報に基づいたWebアプリケーションの性能解析が可能です。',
     },
     {
       id: 'Splunk',
-      iconUrl: '',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/splunk/splunk-original-wordmark.svg',
       lank: 3,
-      description: '',
-    },
-    {
-      id: 'SourceClear',
-      iconUrl: '',
-      lank: 3,
-      description: '',
+      description:
+        '各環境にデプロイしたアプリケーションのログの収集設定、収集したログ情報から適切なデータを得るためのSplunkクエリの作成、性能統計やエラー統計などメトリクス可視化のためのダッシュボードの作成などが可能です。',
     },
     {
       id: 'SonarQube',
-      iconUrl: '',
+      iconUrl: 'https://cdn.worldvectorlogo.com/logos/sonarqube-1.svg',
       lank: 3,
-      description: '',
+      description:
+        'CICDツールと組み合わせたプロダクションコードの自動解析・解析結果の自動投稿・PullRequest連携設定などが可能です。',
     },
     {
       id: 'Vim',

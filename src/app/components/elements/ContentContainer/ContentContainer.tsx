@@ -39,7 +39,9 @@ export const ContentContainer = (props: ContentContainerProps) => {
               />
               <div className="flex flex-col h-full justify-around">
                 <span className="text-left">{item.id}</span>
-                <Rating value={item.lank} emptyStarColor="#ccc" />
+                <span className="text-left">
+                  <Rating value={item.lank} emptyStarColor="#ccc" />
+                </span>
               </div>
             </div>
             <div
