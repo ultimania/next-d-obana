@@ -1,11 +1,11 @@
 import './globals.scss';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import ProvidersWrapper from './ProviderWrapper';
+import ProvidersWrapper from './providers/ProviderWrapper';
 
-import Navigation from './Navigation';
-import ButtonArea from './ButtonArea';
-import LogoArea from './LogoArea';
+import Navigation from './layouts/Navigation';
+import ButtonArea from './layouts/ButtonArea';
+import LogoArea from './layouts/LogoArea';
 
 const inter = Inter({ subsets: ['latin'] });
 

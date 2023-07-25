@@ -4,8 +4,8 @@ import clsx from 'clsx';
 
 import { NextUIProvider } from '@nextui-org/react';
 import { SessionProvider } from 'next-auth/react';
-import useStore from '../../store';
-import Profile from './components/Profile';
+import useStore from '../../../store';
+import Profile from '../components/Profile';
 
 export default function ProvidersWrapper({
   children,

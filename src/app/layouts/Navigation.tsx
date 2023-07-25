@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { IoIosArrowDown } from 'react-icons/io';
 import { RxCross1 } from 'react-icons/rx';
 
-import useStore from '../../store';
+import useStore from '../../../store';
 import styles from './Navigation.module.scss';
 
 export default function Navigation({ className }: { className: string }) {

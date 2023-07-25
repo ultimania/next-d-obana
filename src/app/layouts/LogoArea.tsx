@@ -1,4 +1,4 @@
-import { Logo } from './components/elements/Logo';
+import { Logo } from '../components/elements/Logo';
 
 export default function Navigation({ className }: { className: string }) {
   return (
