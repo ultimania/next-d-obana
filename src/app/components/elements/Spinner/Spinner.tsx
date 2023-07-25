@@ -7,7 +7,7 @@ export const Spinner = ({ color = 'border-blue-500' }) => (
         'h-10',
         'w-10',
         'animate-spin',
-        'rouded-full',
+        'rounded-full',
         'border-4',
         color,
         'border-t-transparent',
