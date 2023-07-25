@@ -124,9 +124,17 @@ export default function Skillset() {
       id: 'Github',
       iconUrl:
         'https://github.com/devicons/devicon/raw/master/icons/github/github-original.svg',
-      lank: 5,
+      lank: 4,
       description:
         'Gitの基本的な操作に加え、IssueやPullRequest、Actionsなどのプロバイダとしての基本機能の他に、組織として安全に運用していくための設定・管理作業の実績もあります。',
+    },
+    {
+      id: 'Figma',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/figma/figma-original.svg',
+      lank: 1,
+      description:
+        '解説の動画や記事を見て学習しながら、実際にWEBサイトのデザインを作って覚えている最中です。このサイトのデザインもFigmaを使ってデザインしてます。',
     },
     {
       id: 'Maven',
@@ -224,23 +232,95 @@ export default function Skillset() {
 
   const infrastructure: ContentContainerItem[] = [
     {
-      id: 'ShellScript',
+      id: 'OpenStack',
       iconUrl:
-        'https://github.com/devicons/devicon/raw/master/icons/bash/bash-original.svg',
+        'https://github.com/devicons/devicon/raw/develop/icons/openstack/openstack-original.svg',
       lank: 3,
       description:
-        'あまり複雑なコードをスクラッチで書くことはできませんが、ライブラリの実装や基本的なコードは問題なく書けます。',
+        '各コンポーネントの基本的な機能や使い方を理解しており、Keystoneでのユーザー管理機能の拡張やグループ管理などの追加機能の実装経験があります。コンポーネントごとにサーバーを分散させた独自のプライベートクラウド環境を構築することもできます。',
+    },
+    {
+      id: 'AWS',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+      lank: 4,
+      description:
+        '一般的に使用される各サービスの機能や使い方を理解しており、システムの特性に沿ったサービスの選定、アーキテクチャ設計、サービス設計および開発が可能です。Terraformと組み合わせたデータ分析基盤の自動構築ソリューションの企画・開発経験もあります。ベンダ認定はアソシエイト（三冠）です。',
+    },
+    {
+      id: 'GoogleCloud',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/googlecloud/googlecloud-original.svg',
+      lank: 3,
+      description:
+        '一般的に使用される各サービスの機能や使い方を理解しており、システムの特性に沿ったサービスの選定、アーキテクチャ設計、サービス設計が可能です。Terraformと組み合わせたデータ分析基盤の自動構築ソリューションの企画・開発経験もあります。ベンダ認定はアソシエイトです。',
+    },
+    {
+      id: 'Azure',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/azure/azure-original.svg',
+      lank: 2,
+      description:
+        '一般的に使用される各サービスの機能や使い方を理解しており、特定のサービスを使ったアプリケーション開発が可能です。ベンダ認定はFundamentalsです。',
+    },
+    {
+      id: 'Kubernetes',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/kubernetes/kubernetes-plain.svg',
+      lank: 3,
+      description:
+        '基本的な機能や仕組みを理解しており、マネージドサービスを使った開発・運用だけでなく、オンプレ環境での複数ノードのクラスタ構築が可能です。各種リソースを作成するためのマニフェストファイルの作成や、Terraformと組み合わせた自動デプロイやRBAC機能を使った適切な権限管理など本番環境にも耐えうる基盤として構築・運用することが可能です。',
+    },
+    {
+      id: 'Docker',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/docker/docker-original.svg',
+      lank: 4,
+      description:
+        '基本的な機能や仕組みを理解しており、DockerfileやComposeファイルの作成、イメージのビルド・バージョン管理、Swarmを使ったクラスタリング環境の構築などが可能です。',
+    },
+    {
+      id: 'Linux',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/linux/linux-original.svg',
+      lank: 4,
+      description:
+        'OSの設計・構築、bashを使った各種シェル操作、運用・トラブルシューティング等の業務経験があり、開発・運用業務をこなす上で問題なく使用できるレベルです。ベンダ認定はLPICレベル2です。',
+    },
+    {
+      id: 'Oracle',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/oracle/oracle-original.svg',
+      lank: 5,
+      description:
+        '各種構成の物理設計・論理設計、パフォーマンスチューニング、トラブルシューティング、全ての業務領域においてリードできるレベルです。ベンダ認定はPlatinum(11g)です。',
+    },
+    {
+      id: 'Snowflake',
+      iconUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg',
+      lank: 3,
+      description:
+        '基本的な機能や仕組みを理解しており、AirbyteやDbt,Tableauなどの各種エコシステムと組み合わせたDWHとしての設計・開発・運用が可能です。ベンダ認定はCoreです。',
     },
   ];
 
   const other: ContentContainerItem[] = [
     {
-      id: 'ShellScript',
+      id: 'Raspberrypi',
       iconUrl:
-        'https://github.com/devicons/devicon/raw/master/icons/bash/bash-original.svg',
-      lank: 3,
+        'https://github.com/devicons/devicon/raw/develop/icons/raspberrypi/raspberrypi-original.svg',
+      lank: 1,
       description:
-        'あまり複雑なコードをスクラッチで書くことはできませんが、ライブラリの実装や基本的なコードは問題なく書けます。',
+        '趣味で動体検知カメラや自動水やり機などを作って動かしてます。',
+    },
+    {
+      id: 'Arduino / ESP32',
+      iconUrl:
+        'https://github.com/devicons/devicon/raw/develop/icons/arduino/arduino-original.svg',
+      lank: 1,
+      description:
+        '趣味でLED制御や家電・デスク周りのスマート化でちょっとしたマイコン制御をしています。',
     },
   ];
 
