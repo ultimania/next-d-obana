@@ -14,8 +14,9 @@ type ContentContainerProps = {
 export type ContentContainerItem = {
   id: string;
   iconUrl: string;
-  lank: number;
-  description: string;
+  lank?: number;
+  subtitle?: string;
+  description?: string;
 };
 
 export const ContentContainer = (props: ContentContainerProps) => {
@@ -40,7 +41,12 @@ export const ContentContainer = (props: ContentContainerProps) => {
               <div className="flex flex-col h-full justify-around">
                 <span className="text-left">{item.id}</span>
                 <span className="text-left">
-                  <Rating value={item.lank} emptyStarColor="#ccc" />
+                  {item.subtitle && (
+                    <div className={clsx('font-bold')}>{item.subtitle}</div>
+                  )}
+                  {item.lank && (
+                    <Rating value={item.lank} emptyStarColor="#ccc" />
+                  )}
                 </span>
               </div>
             </div>
