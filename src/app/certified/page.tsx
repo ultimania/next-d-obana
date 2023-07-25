@@ -7,41 +7,41 @@ export default function Skillset() {
   const ipa: ContentContainerItem[] = [
     {
       id: '情報処理技術者試験',
-      iconUrl: '',
+      iconUrl: '/certified/ipa_fe.svg',
       subtitle: '基本情報技術者',
     },
     {
       id: '情報処理技術者試験',
-      iconUrl: '',
+      iconUrl: '/certified/ipa_ap.svg',
       subtitle: '応用情報技術者',
     },
     {
       id: '情報処理技術者試験',
-      iconUrl: '',
+      iconUrl: '/certified/ipa_nw.svg',
       subtitle: 'データベーススペシャリスト',
     },
     {
       id: '情報処理技術者試験',
-      iconUrl: '',
+      iconUrl: '/certified/ipa_db.svg',
       subtitle: 'ネットワークスペシャリスト',
     },
   ];
   const snowflake: ContentContainerItem[] = [
     {
       id: 'SnowPro Certification',
-      iconUrl: '',
+      iconUrl: '/certified/snowflake_core.svg',
       subtitle: 'Core',
     },
   ];
   const oracle: ContentContainerItem[] = [
     {
       id: 'Oracle Certified Java Programmer',
-      iconUrl: '',
+      iconUrl: '/certified/oracle_java_silver.svg',
       subtitle: 'Silver SE 8',
     },
     {
       id: 'ORACLE MASTER',
-      iconUrl: '',
+      iconUrl: '/certified/oracle_master_platinum.svg',
       subtitle: 'Platinum DBA 11g',
     },
   ];
@@ -49,37 +49,36 @@ export default function Skillset() {
   const lpic: ContentContainerItem[] = [
     {
       id: 'Linux技術者認定試験',
-      iconUrl: '',
+      iconUrl: '/certified/lpic_lv1.svg',
       subtitle: 'Level 1',
     },
     {
       id: 'Linux技術者認定試験',
-      iconUrl: '',
+      iconUrl: '/certified/lpic_lv2.svg',
       subtitle: 'Level 2',
     },
   ];
   const azure: ContentContainerItem[] = [
     {
       id: 'Microsoft Certified: Azure',
-      iconUrl: '',
+      iconUrl: '/certified/azure_az900.svg',
       subtitle: 'Fundamentals',
     },
   ];
   const aws: ContentContainerItem[] = [
     {
       id: 'aws certified Solutions Architect',
-      iconUrl:
-        'https://10pearls.com/wp-content/uploads/2023/04/aws-solution-architect.svg',
+      iconUrl: '/certified/aws_ss_associate.svg',
       subtitle: 'Associate',
     },
     {
       id: 'aws certified SysOpsAdministrator',
-      iconUrl: 'https://10pearls.com/wp-content/uploads/2023/04/aws-sysops.svg',
+      iconUrl: '/certified/aws_sa_associate.svg',
       subtitle: 'Associate',
     },
     {
       id: 'aws certified Developer',
-      iconUrl: 'https://10pearls.com/wp-content/uploads/2023/04/aws-sysops.svg',
+      iconUrl: '/certified/aws_dev_associate.svg',
       subtitle: 'Associate',
     },
   ];
