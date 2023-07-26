@@ -13,7 +13,7 @@ export default function Navigation({ className }: { className: string }) {
     { id: 'SKILLSET', href: '/skillset' },
     { id: 'CERTIFIED', href: '/certified' },
     { id: 'HISTORY', href: '/history' },
-    { id: 'BLOG', href: '/blog' },
+    { id: 'BLOG', href: 'https://fclout.hateblo.jp/' },
     { id: 'GALARY', href: '/galary' },
   ];
   const toggle = useStore((state) => state.toggle);
