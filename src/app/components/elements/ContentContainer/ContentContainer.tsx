@@ -3,12 +3,14 @@
 import Image from 'next/image';
 import clsx from 'clsx';
 import Rating from 'react-star-rating-component';
+import { useInView } from 'react-intersection-observer';
 
 import styles from './Content.module.css';
 
 type ContentContainerProps = {
   title: string;
   items: ContentContainerItem[];
+  fadeIndex: number;
 };
 
 export type ContentContainerItem = {
@@ -20,11 +22,27 @@ export type ContentContainerItem = {
 };
 
 export const ContentContainer = (props: ContentContainerProps) => {
-  const { title, items } = props;
+  const { fadeIndex, title, items } = props;
   const iconImageSize = 80;
+  const { ref, inView } = useInView({
+    rootMargin: '-200px',
+    triggerOnce: true,
+  });
 
   return (
-    <div className="flex flex-col text-right mt-8 mb-28">
+    <div
+      className={clsx(
+        'flex',
+        'flex-col',
+        'text-right',
+        'mt-8',
+        'mb-28',
+        styles['fade-in'],
+        styles[`index-${fadeIndex % 2}`],
+        inView && styles.visible,
+      )}
+      ref={ref}
+    >
       <h1 className="mb-12 text-center">{title}</h1>
 
       <div className="grid grid-cols-2 gap-16">

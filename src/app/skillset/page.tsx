@@ -1,7 +1,9 @@
+import { Suspense } from 'react';
 import {
   ContentContainer,
   ContentContainerItem,
 } from '../components/elements/ContentContainer';
+import { Spinner } from '../components/elements/Spinner';
 
 export default function Skillset() {
   const languageAndFramework: ContentContainerItem[] = [
@@ -324,15 +326,24 @@ export default function Skillset() {
     },
   ];
 
+  const contents = [
+    { title: 'Language & Framework', item: languageAndFramework },
+    { title: 'Development Tool', item: developementTool },
+    { title: 'Infrastructure', item: infrastructure },
+    { title: 'Other', item: other },
+  ];
+
   return (
     <div className="flex flex-col p-10">
-      <ContentContainer
-        title="Language & Framework"
-        items={languageAndFramework}
-      />
-      <ContentContainer title="Development Tool" items={developementTool} />
-      <ContentContainer title="Infrastructure" items={infrastructure} />
-      <ContentContainer title="Other" items={other} />
+      {contents.map((content, index) => (
+        <Suspense fallback={<Spinner />} key={content.title}>
+          <ContentContainer
+            title={content.title}
+            items={content.item}
+            fadeIndex={index}
+          />
+        </Suspense>
+      ))}
     </div>
   );
 }

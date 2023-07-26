@@ -83,14 +83,25 @@ export default function Skillset() {
     },
   ];
 
+  const contents = [
+    { title: 'AWS', content: aws },
+    { title: 'Azure', content: azure },
+    { title: 'LPIC', content: lpic },
+    { title: 'Oracle', content: oracle },
+    { title: 'Snowflake', content: snowflake },
+    { title: '情報処理技術者試験', content: ipa },
+  ];
+
   return (
     <div className="flex flex-col p-10">
-      <ContentContainer title="AWS" items={aws} />
-      <ContentContainer title="Azure" items={azure} />
-      <ContentContainer title="LPIC" items={lpic} />
-      <ContentContainer title="Oracle" items={oracle} />
-      <ContentContainer title="Snowflake" items={snowflake} />
-      <ContentContainer title="情報処理技術者試験" items={ipa} />
+      {contents.map((content, index) => (
+        <ContentContainer
+          title={content.title}
+          items={content.content}
+          key={content.title}
+          fadeIndex={index}
+        />
+      ))}
     </div>
   );
 }
