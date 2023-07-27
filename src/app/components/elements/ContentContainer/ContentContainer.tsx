@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import Rating from 'react-star-rating-component';
 import { useInView } from 'react-intersection-observer';
 
-import styles from './Content.module.css';
+import styles from './ContentContainer.module.scss';
 
 type ContentContainerProps = {
   title: string;
