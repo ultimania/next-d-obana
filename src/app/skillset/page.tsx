@@ -16,7 +16,7 @@ export default function Skillset() {
         '複雑なコードをスクラッチから書くことができます。簡単な業務効率化ツールやユーティリティなどプロジェクトの課題や状況を判断して、適切なプログラムを作成することができます。',
     },
     {
-      id: 'java',
+      id: 'Java',
       iconUrl:
         'https://github.com/devicons/devicon/raw/master/icons/java/java-original-wordmark.svg',
       lank: 5,
