@@ -7,41 +7,41 @@ export default function Skillset() {
   const ipa: ContentContainerItem[] = [
     {
       id: '情報処理技術者試験',
-      iconUrl: '/certified/ipa_fe.svg',
+      iconUrl: '/icon/ipa_fe.svg',
       subtitle: '基本情報技術者',
     },
     {
       id: '情報処理技術者試験',
-      iconUrl: '/certified/ipa_ap.svg',
+      iconUrl: '/icon/ipa_ap.svg',
       subtitle: '応用情報技術者',
     },
     {
       id: '情報処理技術者試験',
-      iconUrl: '/certified/ipa_nw.svg',
+      iconUrl: '/icon/ipa_nw.svg',
       subtitle: 'データベーススペシャリスト',
     },
     {
       id: '情報処理技術者試験',
-      iconUrl: '/certified/ipa_db.svg',
+      iconUrl: '/icon/ipa_db.svg',
       subtitle: 'ネットワークスペシャリスト',
     },
   ];
   const snowflake: ContentContainerItem[] = [
     {
       id: 'SnowPro Certification',
-      iconUrl: '/certified/snowflake_core.svg',
+      iconUrl: '/icon/snowflake_core.svg',
       subtitle: 'Core',
     },
   ];
   const oracle: ContentContainerItem[] = [
     {
       id: 'Oracle Certified Java Programmer',
-      iconUrl: '/certified/oracle_java_silver.svg',
+      iconUrl: '/icon/oracle_java_silver.svg',
       subtitle: 'Silver SE 8',
     },
     {
       id: 'ORACLE MASTER',
-      iconUrl: '/certified/oracle_master_platinum.svg',
+      iconUrl: '/icon/oracle_master_platinum.svg',
       subtitle: 'Platinum DBA 11g',
     },
   ];
@@ -49,36 +49,36 @@ export default function Skillset() {
   const lpic: ContentContainerItem[] = [
     {
       id: 'Linux技術者認定試験',
-      iconUrl: '/certified/lpic_lv1.svg',
+      iconUrl: '/icon/lpic_lv1.svg',
       subtitle: 'Level 1',
     },
     {
       id: 'Linux技術者認定試験',
-      iconUrl: '/certified/lpic_lv2.svg',
+      iconUrl: '/icon/lpic_lv2.svg',
       subtitle: 'Level 2',
     },
   ];
   const azure: ContentContainerItem[] = [
     {
       id: 'Microsoft Certified: Azure',
-      iconUrl: '/certified/azure_az900.svg',
+      iconUrl: '/icon/azure_az900.svg',
       subtitle: 'Fundamentals',
     },
   ];
   const aws: ContentContainerItem[] = [
     {
       id: 'aws certified Solutions Architect',
-      iconUrl: '/certified/aws_ss_associate.svg',
+      iconUrl: '/icon/aws_ss_associate.svg',
       subtitle: 'Associate',
     },
     {
       id: 'aws certified SysOpsAdministrator',
-      iconUrl: '/certified/aws_sa_associate.svg',
+      iconUrl: '/icon/aws_sa_associate.svg',
       subtitle: 'Associate',
     },
     {
       id: 'aws certified Developer',
-      iconUrl: '/certified/aws_dev_associate.svg',
+      iconUrl: '/icon/aws_dev_associate.svg',
       subtitle: 'Associate',
     },
   ];

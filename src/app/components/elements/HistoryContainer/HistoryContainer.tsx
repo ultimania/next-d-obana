@@ -20,9 +20,9 @@ export const HistoryContainer = (props: HistoryContainerProps) => {
   const { item, index } = props;
 
   return (
-    <div className={clsx(index, 'flex', 'flex-col', 'mt-8', 'mb-28')}>
+    <div className={clsx(index, 'flex', 'flex-col', 'mt-8', 'mb-28', 'w-full')}>
       <div
-        className={clsx('flex', 'flex-row', 'items-center', 'justify-around')}
+        className={clsx('flex', 'flex-row', 'items-center', 'justify-between')}
       >
         <div
           className={clsx(
@@ -37,9 +37,9 @@ export const HistoryContainer = (props: HistoryContainerProps) => {
           <div> ~ </div>
           <div>{item.endDate}</div>
         </div>
-        <div className={clsx('flex', 'flex-row')}>
+        <div className={clsx('grid', 'grid-cols-12', 'max-w-lg')}>
           {item.skills.map((skill) => (
-            <ImageIcon id={skill} key={skill} size={40} />
+            <ImageIcon id={skill} key={skill} size={40} className="mx-4" />
           ))}
         </div>
         <div className={clsx('flex', 'flex-row')}>

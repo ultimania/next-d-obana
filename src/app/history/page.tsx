@@ -132,7 +132,7 @@ export default function Skillset() {
         'アクセス管理、フェデレーションサーバープラットフォームのOSSであるOpenAM, OpenIG, OpenDJをカスタマイズした、社内向けの認証基盤サービスの開発。',
       positions: ['SE'],
       members: 8,
-      skills: ['Java', 'OpenAM', 'OpenIG', 'OpenDJ', 'jetty'],
+      skills: ['Java', 'OpenAM'],
     },
     {
       startDate: '2016/04/01',
@@ -157,7 +157,7 @@ export default function Skillset() {
   ];
 
   return (
-    <div className="flex flex-col p-10">
+    <div className="flex flex-col p-10 max-w-screen-lg items-center">
       {histories.map((history, index) => (
         <Suspense fallback={<Spinner />} key={history.title}>
           <HistoryContainer item={history} index={index} />
