@@ -20,7 +20,8 @@ export default function Skillset() {
       startDate: '2021/06/01',
       endDate: '2022/09/30',
       title: 'コンシューマー向け飲食店予約サービスの開発・保守',
-      description: '',
+      description:
+        '既存コンポーネントの保守、バグ対応、機能改善、大型案件での開発作業、新規APIサーバーの開発、FEアプリケーション開発バッチアプリケーション開発',
       positions: ['SE', 'TL'],
       members: 20,
       skills: [
@@ -28,7 +29,6 @@ export default function Skillset() {
         'SpringBoot',
         'Thymeleaf',
         'Maven',
-        'Spock',
         'Javascript',
         'Typescript',
         'HTML5',
@@ -40,7 +40,6 @@ export default function Skillset() {
         'Kubernetes',
         'Vuejs',
         'Nodejs',
-        'ServerlessFramework',
         'Screwdriver',
         'SonarQube',
       ],
@@ -49,7 +48,8 @@ export default function Skillset() {
       startDate: '2020/10/01',
       endDate: '2021/05/31',
       title: 'DevOps最新動向に関する調査・検証と社内技術の推進',
-      description: '',
+      description:
+        'DevOpsに関連する技術トレンドの調査, 検証、社内技術力推進企画の検討, 立案, 推進、同企画における社内ツールの開発（インフラ構築～アプリ開発）',
       positions: ['PM'],
       members: 2,
       skills: [
@@ -73,7 +73,8 @@ export default function Skillset() {
       startDate: '2020/09/01',
       endDate: '2021/05/31',
       title: '共済団体様オンラインシステムの基盤更改プロジェクト',
-      description: '',
+      description:
+        'プロジェクト計画の立案、見積もり書の作成/提案、プロジェクトの発足・遂行、各種プロジェクト管理（要員・進捗等）、顧客折衝',
       positions: ['PM'],
       members: 10,
       skills: [
@@ -90,9 +91,10 @@ export default function Skillset() {
       startDate: '2018/07/01',
       endDate: '2020/08/31',
       title: '各種共済システムの運用保守・基盤更改',
-      description: '',
+      description:
+        'プロジェクト計画の立案、見積もり書の作成/提案、プロジェクトの発足・遂行、各種プロジェクト管理（要員・進捗等）、顧客折衝',
       positions: ['PM'],
-      members: 10,
+      members: 20,
       skills: [
         'Linux',
         'AIX',
@@ -101,15 +103,14 @@ export default function Skillset() {
         'PowerShell',
         'Catalyst',
         'ESXi',
-        'Juniper',
-        'Power',
       ],
     },
     {
       startDate: '2017/06/01',
       endDate: '2018/06/30',
       title: '生産管理パッケージの設計・開発',
-      description: '',
+      description:
+        '.NETで作られた製造業向けの生産管理業務ソフトウェアパッケージのカスタマイズ開発',
       positions: ['SE'],
       members: 10,
       skills: ['Windows', 'Oracle', 'DotNET', 'VB', 'CSharp', 'PLSQL'],

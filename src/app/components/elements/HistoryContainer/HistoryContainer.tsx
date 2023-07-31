@@ -27,28 +27,36 @@ export const HistoryContainer = (props: HistoryContainerProps) => {
         <div
           className={clsx(
             'flex',
-            'flex-col',
+            'flex-row',
             'justify-between',
             'relative',
-            'h-16',
+            'h-10',
           )}
         >
-          <div>{item.startDate}</div>
-          <div> ~ </div>
-          <div>{item.endDate}</div>
+          <span>{item.startDate}</span>
+          <span className={clsx('mx-4')}> ~ </span>
+          <span>{item.endDate}</span>
         </div>
-        <div className={clsx('flex-1', 'mx-4')}>
-          <div className={clsx('grid', 'grid-cols-auto-fit', 'gap-4')}>
-            {item.skills.map((skill) => (
-              <ImageIcon id={skill} key={skill} size={40} />
-            ))}
-          </div>
-        </div>
-        <div className={clsx('flex', 'flex-row')}>
-          {item.positions.map((position) => (
-            <span key={position} className={clsx('mx-2')}>
-              {position}
-            </span>
+      </div>
+      <div className={clsx('flex', 'flex-row', 'relative', 'h-10')}>
+        {item.positions.map((position) => (
+          <span key={position} className={clsx('mr-4')}>
+            {position}
+          </span>
+        ))}
+      </div>
+      <div className={clsx('flex-1')}>
+        <div
+          className={clsx(
+            'grid',
+            'grid-cols-auto-fit',
+            'gap-4',
+            'auto-rows-min',
+            'justify-content: center',
+          )}
+        >
+          {item.skills.map((skill) => (
+            <ImageIcon id={skill} key={skill} size={40} />
           ))}
         </div>
       </div>

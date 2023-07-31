@@ -21,9 +21,8 @@ const imageIconSource = {
   Zabbix: '/icon/zabbix.svg',
   SpringBoot:
     'https://github.com/devicons/devicon/raw/master/icons/spring/spring-original-wordmark.svg',
-  Thymeleaf: '',
-  Maven: '',
-  Spock: '',
+  Thymeleaf: '/icon/thymeleaf.svg',
+  Maven: '/icon/maven.svg',
   Javascript:
     'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
   Typescript:
@@ -42,19 +41,18 @@ const imageIconSource = {
     'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg',
   Nodejs:
     'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
-  ServerlessFramework: '',
-  Screwdriver: '',
-  SonarQube: '',
+  ServerlessFramework: 'https://www.svgrepo.com/show/374073/serverless.svg',
+  Screwdriver: '/icon/screwdriver.svg',
+  SonarQube: 'https://cdn.worldvectorlogo.com/logos/sonarqube-1.svg',
   Jenkins:
     'https://github.com/devicons/devicon/raw/master/icons/jenkins/jenkins-original.svg',
   GitLab:
     'https://github.com/devicons/devicon/raw/master/icons/gitlab/gitlab-original.svg',
-  PowerShell: '',
-  Catalyst: '',
-  ESXi: '',
-  AIX: '',
-  Juniper: '',
-  Power: '',
+  PowerShell:
+    'https://raw.githubusercontent.com/gist/Xainey/d5bde7d01dcbac51ac951810e94313aa/raw/6c858c46726541b48ddaaebab29c41c07a196394/PowerShell.svg',
+  Catalyst: '/icon/cisco.svg',
+  ESXi: 'https://newrelic.com/sites/default/files/quickstarts/images/icons/vmware-esxi--logo.svg',
+  AIX: '/icon/aix.svg',
   Windows:
     'https://github.com/devicons/devicon/raw/develop/icons/windows8/windows8-original.svg',
   DotNET:
