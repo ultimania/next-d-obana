@@ -37,10 +37,12 @@ export const HistoryContainer = (props: HistoryContainerProps) => {
           <div> ~ </div>
           <div>{item.endDate}</div>
         </div>
-        <div className={clsx('grid', 'grid-cols-12', 'max-w-lg')}>
-          {item.skills.map((skill) => (
-            <ImageIcon id={skill} key={skill} size={40} className="mx-4" />
-          ))}
+        <div className={clsx('flex-1', 'mx-4')}>
+          <div className={clsx('grid', 'grid-cols-auto-fit', 'gap-4')}>
+            {item.skills.map((skill) => (
+              <ImageIcon id={skill} key={skill} size={40} />
+            ))}
+          </div>
         </div>
         <div className={clsx('flex', 'flex-row')}>
           {item.positions.map((position) => (
