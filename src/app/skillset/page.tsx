@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import {
   ContentContainer,
   ContentContainerItem,
-} from '../components/elements/ContentContainer';
+} from '../components/containers/ContentContainer';
 import { Spinner } from '../components/elements/Spinner';
 
 export default function Skillset() {

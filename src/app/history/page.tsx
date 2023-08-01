@@ -3,7 +3,7 @@ import { Spinner } from '../components/elements/Spinner';
 import {
   HistoryContainer,
   HistoryContainerItem,
-} from '../components/elements/HistoryContainer';
+} from '../components/containers/HistoryContainer';
 
 export default function Skillset() {
   const histories: HistoryContainerItem[] = [
@@ -11,10 +11,19 @@ export default function Skillset() {
       startDate: '2022/10/01',
       endDate: '2023/05/31',
       title: 'データ管理基盤ソリューションおよびパッケージ製品の企画・開発',
-      description: '',
-      positions: ['SE'],
+      description:
+        'モダンデータスタックなデータ分析基盤を自動構築する自社パッケージ製品の企画・開発',
+      positions: ['エンジニア'],
       members: 2,
-      skills: [],
+      skills: [
+        'AWS',
+        'Terraform',
+        'Docker',
+        'Kubernetes',
+        'GCP',
+        'Python',
+        'Go',
+      ],
     },
     {
       startDate: '2021/06/01',
@@ -22,7 +31,7 @@ export default function Skillset() {
       title: 'コンシューマー向け飲食店予約サービスの開発・保守',
       description:
         '既存コンポーネントの保守、バグ対応、機能改善、大型案件での開発作業、新規APIサーバーの開発、FEアプリケーション開発バッチアプリケーション開発',
-      positions: ['SE', 'TL'],
+      positions: ['エンジニア', 'チームリーダー'],
       members: 20,
       skills: [
         'Java',
@@ -50,7 +59,7 @@ export default function Skillset() {
       title: 'DevOps最新動向に関する調査・検証と社内技術の推進',
       description:
         'DevOpsに関連する技術トレンドの調査, 検証、社内技術力推進企画の検討, 立案, 推進、同企画における社内ツールの開発（インフラ構築～アプリ開発）',
-      positions: ['PM'],
+      positions: ['プロジェクトマネージャー'],
       members: 2,
       skills: [
         'Javascript',
@@ -75,7 +84,7 @@ export default function Skillset() {
       title: '共済団体様オンラインシステムの基盤更改プロジェクト',
       description:
         'プロジェクト計画の立案、見積もり書の作成/提案、プロジェクトの発足・遂行、各種プロジェクト管理（要員・進捗等）、顧客折衝',
-      positions: ['PM'],
+      positions: ['プロジェクトマネージャー'],
       members: 10,
       skills: [
         'Linux',
@@ -93,7 +102,7 @@ export default function Skillset() {
       title: '各種共済システムの運用保守・基盤更改',
       description:
         'プロジェクト計画の立案、見積もり書の作成/提案、プロジェクトの発足・遂行、各種プロジェクト管理（要員・進捗等）、顧客折衝',
-      positions: ['PM'],
+      positions: ['プロジェクトマネージャー'],
       members: 20,
       skills: [
         'Linux',
@@ -111,9 +120,9 @@ export default function Skillset() {
       title: '生産管理パッケージの設計・開発',
       description:
         '.NETで作られた製造業向けの生産管理業務ソフトウェアパッケージのカスタマイズ開発',
-      positions: ['SE'],
+      positions: ['エンジニア'],
       members: 10,
-      skills: ['Windows', 'Oracle', 'DotNET', 'VB', 'CSharp', 'PLSQL'],
+      skills: ['Windows', 'Oracle', 'DotNET', 'CSharp'],
     },
     {
       startDate: '2017/02/01',
@@ -121,7 +130,7 @@ export default function Skillset() {
       title: 'Oracle監視サービスの設計・開発',
       description:
         'OracleCloud上でPaaSとして提供するOracleDatabaseを監視するためのサービスの設計・構築',
-      positions: ['TL'],
+      positions: ['チームリーダー'],
       members: 1,
       skills: ['Linux', 'PostgreSQL', 'Python', 'ShellScript', 'Zabbix'],
     },
@@ -131,7 +140,7 @@ export default function Skillset() {
       title: '社内向けフェデレーションサービスの開発',
       description:
         'アクセス管理、フェデレーションサーバープラットフォームのOSSであるOpenAM, OpenIG, OpenDJをカスタマイズした、社内向けの認証基盤サービスの開発。',
-      positions: ['SE'],
+      positions: ['エンジニア'],
       members: 8,
       skills: ['Java', 'OpenAM'],
     },
@@ -141,7 +150,7 @@ export default function Skillset() {
       title: '企業向けパブリッククラウドサービスの開発',
       description:
         'OpenStackを使った大規模パブリッククラウドサービスの開発。主にKeyStoneコンポーネントをカスタマイズしたユーザー管理機能の開発を担当',
-      positions: ['SE'],
+      positions: ['エンジニア'],
       members: 10,
       skills: ['OpenStack', 'Linux', 'Python', 'Java', 'MySQL'],
     },
@@ -151,7 +160,7 @@ export default function Skillset() {
       title: 'DB統合システムの設計・開発',
       description:
         'Oracle Databaseをベースとした大規模組織向けのデータベースサービス基盤の上流設計から開発・テストまで',
-      positions: ['SE', 'TL'],
+      positions: ['エンジニア', 'チームリーダー'],
       members: 10,
       skills: ['Oracle', 'Linux', 'Solaris', 'ShellScript'],
     },

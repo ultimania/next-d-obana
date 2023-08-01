@@ -57,9 +57,9 @@ const imageIconSource = {
     'https://github.com/devicons/devicon/raw/develop/icons/windows8/windows8-original.svg',
   DotNET:
     'https://github.com/devicons/devicon/raw/master/icons/dot-net/dot-net-original.svg',
-  VB: '',
-  CSharp: '',
-  PLSQL: '',
+  CSharp: '/icon/csharp.svg',
+  Go: '/icon/go.svg',
+  GCP: '/icon/gcp.svg',
 } as const;
 
 export type ImageIconType = keyof typeof imageIconSource;

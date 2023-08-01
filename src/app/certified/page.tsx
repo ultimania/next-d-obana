@@ -1,7 +1,7 @@
 import {
   ContentContainer,
   ContentContainerItem,
-} from '../components/elements/ContentContainer';
+} from '../components/containers/ContentContainer';
 
 export default function Skillset() {
   const ipa: ContentContainerItem[] = [
