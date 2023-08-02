@@ -43,22 +43,35 @@ export const ContentContainer = (props: ContentContainerProps) => {
       )}
       ref={ref}
     >
-      <h1 className="mb-12 text-center">{title}</h1>
+      <h1 className={clsx('mb-12', 'text-center')}>{title}</h1>
 
-      <div className="grid grid-cols-2 gap-16">
+      <div className={clsx('grid', 'grid-cols-2', 'gap-16')}>
         {items.map((item) => (
-          <div key={item.id} className="relative w-full flex flex-col">
-            <div className="flex flex-row justify-left items-center">
+          <div
+            key={item.id}
+            className={clsx('relative', 'w-full', 'flex', 'flex-col')}
+          >
+            <div
+              className={clsx(
+                'flex',
+                'flex-row',
+                'justify-left',
+                'items-center',
+                'overflow-x-hidden',
+              )}
+            >
               <Image
                 src={item.iconUrl}
                 alt={item.id}
                 width={iconImageSize}
                 height={iconImageSize}
-                className="mx-8"
+                className={clsx('mx-8')}
               />
-              <div className="flex flex-col h-full justify-around">
-                <span className="text-left">{item.id}</span>
-                <span className="text-left">
+              <div
+                className={clsx('flex', 'flex-col', 'h-full', 'justify-around')}
+              >
+                <span className={clsx('text-left')}>{item.id}</span>
+                <span className={clsx('text-left')}>
                   {item.subtitle && (
                     <div className={clsx('font-bold')}>{item.subtitle}</div>
                   )}

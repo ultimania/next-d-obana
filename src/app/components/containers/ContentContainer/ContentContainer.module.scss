@@ -16,11 +16,11 @@
   transition: opacity 0.5s ease, transform 0.5s ease;
 
   &.index-0 {
-    transform: translateX(140px);
+    transform: translateX(20px);
   }
 
   &.index-1 {
-    transform: translateX(-140px);
+    transform: translateX(-20px);
   }
 }
 
