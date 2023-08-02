@@ -1,6 +1,11 @@
+'use client';
+
 import clsx from 'clsx';
+import { useInView } from 'react-intersection-observer';
 import { ImageIcon, ImageIconType } from '../../elements/ImageIcon';
 import { Button } from '../../elements/Button';
+
+import styles from './HistoryContainer.module.scss';
 
 export type HistoryContainerItem = {
   startDate: string;
@@ -19,9 +24,25 @@ type HistoryContainerProps = {
 
 export const HistoryContainer = (props: HistoryContainerProps) => {
   const { item, index } = props;
+  const { ref, inView } = useInView({
+    rootMargin: '-30%',
+    triggerOnce: true,
+  });
 
   return (
-    <div className={clsx(index, 'flex', 'flex-col', 'mt-8', 'mb-28', 'w-full')}>
+    <div
+      className={clsx(
+        styles['fade-in'],
+        styles[`index-${index % 2}`],
+        inView && styles.visible,
+        'flex',
+        'flex-col',
+        'mt-8',
+        'mb-28',
+        'w-full',
+      )}
+      ref={ref}
+    >
       <div
         className={clsx('flex', 'flex-row', 'items-center', 'justify-between')}
       >

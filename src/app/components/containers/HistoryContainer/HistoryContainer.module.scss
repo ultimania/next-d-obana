@@ -1,0 +1,30 @@
+.title {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.category {
+  font-size: medium;
+}
+
+.date {
+  font-size: medium;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  &.index-0 {
+    transform: translateX(20px);
+  }
+
+  &.index-1 {
+    transform: translateX(-20px);
+  }
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}

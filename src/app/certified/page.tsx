@@ -93,7 +93,7 @@ export default function Skillset() {
   ];
 
   return (
-    <div className="flex flex-col p-10">
+    <div className="flex flex-col p-10 mt-52">
       {contents.map((content, index) => (
         <ContentContainer
           title={content.title}

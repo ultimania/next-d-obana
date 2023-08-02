@@ -334,7 +334,7 @@ export default function Skillset() {
   ];
 
   return (
-    <div className="flex flex-col p-10">
+    <div className="flex flex-col p-10 mt-52">
       {contents.map((content, index) => (
         <Suspense fallback={<Spinner />} key={content.title}>
           <ContentContainer

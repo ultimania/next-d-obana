@@ -167,7 +167,7 @@ export default function Skillset() {
   ];
 
   return (
-    <div className="flex flex-col p-10 max-w-screen-lg items-center">
+    <div className="flex flex-col p-10 max-w-screen-lg items-center mt-52">
       {histories.map((history, index) => (
         <Suspense fallback={<Spinner />} key={history.title}>
           <HistoryContainer item={history} index={index} />
