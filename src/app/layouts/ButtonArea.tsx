@@ -7,20 +7,17 @@ import {
   LiaYoutube,
   LiaLinkedin,
 } from 'react-icons/lia';
-import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
 
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import clsx from 'clsx';
 
 import styles from './ButtonArea.module.scss';
+import { Button } from '../components/elements/Button';
 
 export default function Navigation({ className }: { className: string }) {
   const router = useRouter();
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [hoveredControlIndex, setHoveredControlIndex] = useState<number | null>(
-    null,
-  );
 
   const buttonItems = [
     {
@@ -40,11 +37,6 @@ export default function Navigation({ className }: { className: string }) {
       icon: LiaLinkedin,
       href: 'https://www.linkedin.com/in/takumi-fukaya-529627256/',
     },
-  ];
-
-  const controlItems = [
-    { id: 'up', icon: IoIosArrowUp, class: 'control-button-up' },
-    { id: 'down', icon: IoIosArrowDown, class: 'control-button-down' },
   ];
 
   const returnTop = () => {
@@ -83,22 +75,9 @@ export default function Navigation({ className }: { className: string }) {
           ))}
         </div>
         <div className="fixed bottom-0 p-4 flex flex-col items-center">
-          <button type="submit" className="my-4" onClick={returnTop}>
+          <Button type="submit" className="my-4" onClick={returnTop}>
             top
-          </button>
-          {controlItems.map((item, index) => (
-            <item.icon
-              key={item.id}
-              className={clsx(
-                'my-4',
-                'cursor-pointer',
-                index === hoveredControlIndex && styles.hoverd,
-                styles[item.class],
-              )}
-              onMouseEnter={() => setHoveredControlIndex(index)}
-              onMouseLeave={() => setHoveredControlIndex(null)}
-            />
-          ))}
+          </Button>
         </div>
       </div>
     </div>

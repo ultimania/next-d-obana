@@ -13,17 +13,19 @@ type ButtonProps = {
   hover?: boolean;
   href?: string;
   type?: 'button' | 'submit' | 'reset' | undefined;
+  onClick?: () => void;
 };
 
 export const Button = (props: ButtonProps) => {
-  const { children, className, href, type, color, outline, hover } = props;
+  const { onClick, children, className, href, type, color, outline, hover } =
+    props;
   const defaultClasses = [
     'font-semibold',
     'py-2',
     'px-4',
     'border',
     'rounded-xl',
-    'cursor-default',
+    type === 'button' && 'cursor-default',
   ];
   const colorClass = {
     none: [],
@@ -54,7 +56,7 @@ export const Button = (props: ButtonProps) => {
   if (href) {
     return (
       <a href={href}>
-        <button className={buttonClasses} type={type}>
+        <button className={buttonClasses} type={type} onClick={onClick}>
           {children}
         </button>
       </a>
@@ -62,7 +64,7 @@ export const Button = (props: ButtonProps) => {
   }
 
   return (
-    <button className={buttonClasses} type={type}>
+    <button className={buttonClasses} type={type} onClick={onClick}>
       {children}
     </button>
   );
