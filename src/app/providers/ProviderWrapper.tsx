@@ -6,6 +6,7 @@ import { NextUIProvider } from '@nextui-org/react';
 import { SessionProvider } from 'next-auth/react';
 import useStore from '../../../store';
 import Profile from '../layouts/Profile';
+import FontProvider from './FontProvider';
 
 export default function ProvidersWrapper({
   children,
@@ -17,20 +18,22 @@ export default function ProvidersWrapper({
   return (
     <SessionProvider>
       <NextUIProvider>
-        <div
-          className={clsx(
-            isShowProfile && 'show',
-            'about',
-            'w-full',
-            'sticky',
-            'relative',
-            'top-0',
-            'z-10',
-          )}
-        >
-          <Profile />
-        </div>
-        <main className="flex flex-row z-0">{children}</main>
+        <FontProvider>
+          <div
+            className={clsx(
+              isShowProfile && 'show',
+              'about',
+              'w-full',
+              'sticky',
+              'relative',
+              'top-0',
+              'z-10',
+            )}
+          >
+            <Profile />
+          </div>
+          <main className="flex flex-row z-0">{children}</main>
+        </FontProvider>
       </NextUIProvider>
     </SessionProvider>
   );
