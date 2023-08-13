@@ -1,4 +1,3 @@
-/* eslint-disable operator-linebreak */
 /* eslint-disable react/button-has-type */
 /* eslint-disable object-curly-newline */
 /* eslint-disable react/require-default-props */
