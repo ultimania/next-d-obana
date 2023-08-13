@@ -76,7 +76,11 @@ export const ContentContainer = (props: ContentContainerProps) => {
                     <div className={clsx('font-bold')}>{item.subtitle}</div>
                   )}
                   {item.lank && (
-                    <Rating value={item.lank} emptyStarColor="#ccc" />
+                    <Rating
+                      value={item.lank}
+                      emptyStarColor="#ccc"
+                      name="skill_lank"
+                    />
                   )}
                 </span>
               </div>

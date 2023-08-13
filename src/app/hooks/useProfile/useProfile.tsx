@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Profile from '../../components/Profile';
+import Profile from '../../layouts/Profile';
 
 export const useProfile = (initial = false) => {
   const [isShowProfile, setIsSnowProfile] = React.useState(initial);
