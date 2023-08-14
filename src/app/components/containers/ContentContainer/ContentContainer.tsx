@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import clsx from 'clsx';
-import Rating from 'react-star-rating-component';
+import { Rating } from '@smastrom/react-rating';
 import { useInView } from 'react-intersection-observer';
 
 import styles from './ContentContainer.module.scss';
@@ -75,13 +75,7 @@ export const ContentContainer = (props: ContentContainerProps) => {
                   {item.subtitle && (
                     <div className={clsx('font-bold')}>{item.subtitle}</div>
                   )}
-                  {item.lank && (
-                    <Rating
-                      value={item.lank}
-                      emptyStarColor="#ccc"
-                      name="skill_lank"
-                    />
-                  )}
+                  {item.lank && <Rating value={item.lank} />}
                 </span>
               </div>
             </div>
