@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 
-const branchName = '/main';
+const branchName = '';
 
 const nextConfig = {
-  distDir: 'build',
   reactStrictMode: true,
   assetPrefix: branchName,
   basePath: branchName,
